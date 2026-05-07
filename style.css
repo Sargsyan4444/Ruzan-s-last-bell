@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+[class*="__container"]{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.mainSec{
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("images/secMainbgi.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.mainSec::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,.35);
+}
+
+.main__container{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.fromTo{
+    font-size: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.mainTitle{
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.mainText{
+    max-width: 700px;
+    font-size: 19px;
+    line-height: 1.7;
+    color: white;
+}
+
+.musicPlayer{
+    position: fixed;
+
+    right: 35px;
+    bottom: 35px;
+
+    width: 95px;
+    height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 100;
+}
+
+.disk{
+    width: 80%;
+    height: 79%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    animation: spin 6s linear infinite;
+
+    animation-play-state: paused;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+}
+
+#playBtn{
+    position: absolute;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+
+    background: rgba(255,255,255,.92);
+
+    font-size: 14px;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
