@@ -199,10 +199,10 @@ body{
 
 .frame img{
     width: 101%;
-    height: 90%;
+    height: 125%;
     margin: 3px;
     object-fit: cover;
-
+    object-position: center top;
     border-radius: 3px;
 }
 
@@ -228,6 +228,221 @@ body{
     transform: scale(1.03);
 }
 
+.Info{
+    width: 100%;
+    min-height: 100vh;
+    background: url("images/bgImages.jpg") center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px;
+}
+
+.info__container{
+    text-align: center;
+    color: white;
+    padding:0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infoTitle{
+    font-size: 38px;
+    margin-bottom: 35px;
+}
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+
+    margin-bottom: 50px;
+}
+
+.timeBox{
+    color: #3b2a1a;
+
+    border-radius: 18px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeBox span{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.timeBox p{
+    font-size: 15px;
+}
+
+.placeBox{
+    max-width: 620px;
+
+    background: rgba(255,255,255,.16);
+    backdrop-filter: blur(10px);
+
+    border-radius: 28px;
+    padding: 35px 30px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+}
+
+.placeBox h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.restaurantName{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.eventTime{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.mapBtn{
+    display: inline-block;
+
+    padding: 13px 32px;
+
+    background: white;
+    color: #c79f7a;
+
+    text-decoration: none;
+    border-radius: 30px;
+
+    transition: .3s;
+}
+
+.mapBtn:hover{
+    transform: scale(1.05);
+}
+.dots{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.eventTime{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.confirmBtn{
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 14px 34px;
+
+    background: white;
+    color: #ddb289;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: .3s;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.confirmBtn:hover{
+    transform: scale(1.05);
+}
+
+/* THIRD PHOTO */
+
+.photoCard1{
+    transform: rotate(-5deg);
+    padding-top: 70px;
+}
+
+.frame1{
+    width: 240px;
+    height: 273px;
+
+    background: white;
+
+    padding:
+        18px
+        18px
+        70px
+        18px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.25);
+
+    transition: .4s ease;
+
+    position: relative;
+}
+
+.frame1 img{
+    width: 100%;
+    height: 185px;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    border-radius: 3px;
+}
+
+.frame1:hover{
+    transform: scale(1.03);
+}
+.webInfo {
+    width: 100%;
+    background: #f1f1f1;
+    padding: 20px 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web__container {
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* wraps content on smaller screens */
+}
+
+.web__text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #6b3308;
+    text-align: center;
+}
+
+.web__logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
 @keyframes spin{
     from{
         transform: rotate(0deg);
