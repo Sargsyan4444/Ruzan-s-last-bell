@@ -3,7 +3,7 @@ const btn = document.getElementById("playBtn");
 const disk = document.querySelector(".disk");
 
 let playing = false;
-const targetDate = new Date(2026, 4, 13, 17, 30, 0);
+const targetDate = new Date(2026, 4, 23, 18, 0, 0);
 
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
