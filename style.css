@@ -34,7 +34,7 @@ body{
     position: absolute;
     inset: 0;
 
-    background: rgba(0,0,0,.35);
+    background: rgba(34,1,-10,.35);
 }
 
 .main__container{
@@ -65,7 +65,7 @@ body{
 .musicPlayer{
     position: fixed;
 
-    right: 35px;
+    right: 4px;
     bottom: 35px;
 
     width: 95px;
@@ -107,6 +107,125 @@ body{
     background: rgba(255,255,255,.92);
 
     font-size: 14px;
+}
+.imageSec{
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("images/bgImages.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 0;
+}
+
+
+
+.image__container{
+    position: relative;
+    z-index: 2;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+.imageSec{
+    width: 100%;
+    min-height: 100vh;
+
+    background: url("images/bgImages.jpg") center/cover no-repeat;
+
+    position: relative;
+}
+.imageSec{
+    width: 100%;
+    min-height: 100vh;
+
+    background: url("images/bgImages.jpg") center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px;
+}
+
+.image__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+}
+
+/* FRAME */
+
+.frame{
+    width: 240px;
+    height: 273px;
+
+    background: white;
+
+    padding:
+        18px
+        18px
+        70px
+        18px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.25);
+
+    transition: .4s ease;
+
+    position: relative;
+}
+
+.frame img{
+    width: 101%;
+    height: 90%;
+    margin: 3px;
+    object-fit: cover;
+
+    border-radius: 3px;
+}
+
+/* ASYMMETRIC STYLE */
+
+.photoCard:nth-child(1){
+    transform: rotate(-8deg);
+}
+
+.photoCard:nth-child(2){
+    transform:
+        translateY(70px)
+        rotate(6deg);
+}
+
+.photoCard:nth-child(3){
+    transform: rotate(-5deg);
+}
+
+/* HOVER */
+
+.frame:hover{
+    transform: scale(1.03);
 }
 
 @keyframes spin{
